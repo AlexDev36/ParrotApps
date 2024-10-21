@@ -1,0 +1,82 @@
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+
+.content-container {
+  width: 100vw;
+  max-width: 1400px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s forwards ease-in-out;
+}
+
+.content-title {
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  background-color: #ffffff73;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.content-description {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #505050;
+  background-color: #ffffff73;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button.primary {
+  background-color: #000000;
+}
+
+.button.secondary {
+  background-color: #6c757d;
+}
+
+.button.primary:hover {
+  background-color: #a1a1a1;
+}
+
+.button.secondary:hover {
+  background-color: #b2b6b9;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

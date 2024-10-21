@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth; /* Añade desplazamiento suave */
+}
+
+.navbar {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  display: flex; /* Asegura que el logo y los enlaces estén en extremos opuestos */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.466); /* Fondo semi-transparente */
+  -webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  backdrop-filter: blur(10px); /* Soporte para Safari 9+ y Safari en iOS 9+ */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.imagen-reducida {
+  width: 130px; 
+  height: auto;
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  text-decoration: none !important; 
+}
+
+.navLink:hover {
+  text-decoration: none !important; 
+}
+
+.contact-button {
+  text-decoration: none !important;
+  background-color: #000000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  text-decoration: none !important; 
+  background-color: #838383;
+}
+
+
+.section {
+  padding: 100px 20px;
+  margin-top: 80px; 
+}
