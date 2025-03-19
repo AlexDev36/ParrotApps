@@ -1,10 +1,12 @@
 .contact-section {
+  color: #ffffff;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   padding: 0;
+  background-color: #000000;
 }
 
 .contact-section::before {
@@ -14,8 +16,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://constructive-voices.com/wp-content/uploads/2023/11/Biophilic-Design-in-the-Workplace.jpg');
-  background-size: cover;
+/*   background-image: url('https://constructive-voices.com/wp-content/uploads/2023/11/Biophilic-Design-in-the-Workplace.jpg');
+ */  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.4;
@@ -52,7 +54,7 @@
   transform: translateX(100px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   z-index: 2;
-  background-color: #ffffffad;
+  background-color: #ffffff00;
   border-radius: 10px;
   padding: 5%;
 }
@@ -63,7 +65,7 @@
 
 .form-label {
   font-size: 1.5rem;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 0.5rem;
   font-weight: bold;
   border-radius: 5px;
@@ -82,8 +84,7 @@
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.25rem;
-  background-color: #000000;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s;
@@ -91,6 +92,7 @@
 
 .submit-button:hover {
   background-color: #808080;
+  color: #ffffff;
 }
 
 @keyframes fadeInRight {

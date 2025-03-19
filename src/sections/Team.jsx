@@ -11,7 +11,6 @@ const Team = () => {
     { name: "Nicolas Herrera", role: "Desarrollador Senior" },
     { name: "Nicolas Jaimes", role: "Desarrollador Senior" },
     { name: "Steven Montaño", role: "Arquitecto Backend Senior" },
-    { name: "Lina Sanchez", role: "Project Manager" },
     { name: "Alexis Avila", role: "Desarrollador Junior" },
   ];
 

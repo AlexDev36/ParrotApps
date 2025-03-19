@@ -29,8 +29,8 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
         </div>
         <nav className="nav-links">
           <a href="#servicios" className="navLink" onClick={(e) => handleNavigation(e, '#servicios')}>Services</a>
-          <a href="#equipo" className="navLink" onClick={(e) => handleNavigation(e, '#equipo')}>Our Team</a>
-          <a href="#contacto" className="navLink" onClick={(e) => handleNavigation(e, '#contacto')}>Contact Us</a>
+{/*           <a href="#equipo" className="navLink" onClick={(e) => handleNavigation(e, '#equipo')}>Our Team</a>
+ */}          <a href="#contacto" className="navLink" onClick={(e) => handleNavigation(e, '#contacto')}>Contact Us</a>
           <a href="#contacto" className="contact-button" onClick={(e) => handleNavigation(e, '#contacto')}>Contact</a>
         </nav>
       </div>

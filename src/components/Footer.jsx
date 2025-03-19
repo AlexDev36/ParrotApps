@@ -7,7 +7,7 @@ function Footer() {
       <div className="container">
         <div className="content">
           <p className="copyright">
-            © 2024 ParrotApps. All rights reserved.
+            © 2025 ParrotApps. All rights reserved.
           </p>
           <div className="nav">
             <a href="/politica-de-privacidad" className="navLink">
