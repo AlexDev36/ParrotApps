@@ -2,26 +2,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
-  background-color: #000000;
   flex-direction: column;
+  background-color: #000000;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .content-container {
-  width: 100vw;
+  width: 100%;
   max-width: 1400px;
-  text-align: center;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 1.5s forwards ease-in-out;
 }
 
 .content-title {
-  font-size: 5.5rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
   color: #ffffff;
-  background-color: #00000000;
+  background-color: transparent;
   border-radius: 20px;
   opacity: 0;
   transform: translateX(100px);
@@ -31,8 +30,8 @@
 .content-description {
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #ffffff86;
-  background-color: #ffffff00;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
   border-radius: 20px;
   opacity: 0;
   transform: translateX(-100px);
@@ -42,6 +41,7 @@
 .button-group {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -53,7 +53,6 @@
   border-radius: 0.25rem;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  margin: 0 0.5rem;
   font-size: 1rem;
   transition: background-color 0.3s;
 }
@@ -66,11 +65,7 @@
   background-color: #e2e2e2;
 }
 
-.button.primary:hover {
-  background-color: #004172;
-  color: white;
-}
-
+.button.primary:hover,
 .button.secondary:hover {
   background-color: #004172;
   color: white;
@@ -80,5 +75,51 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* 📌 BREAKPOINTS */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .content-title {
+    font-size: 4rem;
+  }
+  .content-description {
+    font-size: 1.5rem;
+  }
+  .content-container {
+    max-width: 800px;
+  }
+}
+
+/* MÓVILES GRANDES */
+@media (max-width: 768px) {
+  .content-title {
+    font-size: 3rem;
+  }
+  .content-description {
+    font-size: 1.3rem;
+  }
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* MÓVILES PEQUEÑOS */
+@media (max-width: 480px) {
+  .content-title {
+    font-size: 2.5rem;
+  }
+  .content-description {
+    font-size: 1.2rem;
+  }
+  .content-container {
+    padding: 2rem 1rem;
   }
 }

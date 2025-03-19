@@ -7,19 +7,21 @@ body {
   scroll-behavior: smooth; /* Añade desplazamiento suave */
 }
 
+/* NAVBAR */
 .navbar {
   z-index: 1;
   position: fixed;
   width: 100%;
-  display: flex; /* Asegura que el logo y los enlaces estén en extremos opuestos */
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background-color: rgba(255, 255, 255, 0); /* Fondo semi-transparente */
-  -webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque */
-  backdrop-filter: blur(10px); /* Soporte para Safari 9+ y Safari en iOS 9+ */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
+/* Contenedor */
 .container {
   display: flex;
   width: 100%;
@@ -30,30 +32,34 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Imagen logo */
 .imagen-reducida {
   width: 130px; 
   height: auto;
 }
 
+/* Links de navegación */
 .nav-links {
   align-items: center;
   display: flex;
   gap: 2rem;
 }
 
+/* Links generales */
 .navLink {
-  color: rgb(255, 255, 255);
-  background-color: #ffffff00;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
 
 .navLink:hover {
-  text-decoration: none !important; 
+  text-decoration: none !important;
 }
 
+/* Botón de contacto */
 .contact-button {
   text-decoration: none !important;
   background-color: #000000;
@@ -65,12 +71,54 @@ body {
 }
 
 .contact-button:hover {
-  text-decoration: none !important; 
-  background-color: #83838300;
+  background-color: rgba(131, 131, 131, 0);
 }
 
-
+/* SECCIONES */
 .section {
   padding: 100px 20px;
   margin-top: 80px; 
+}
+
+/* 📌 BREAKPOINTS */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1rem; /* Reduce padding en tablets */
+  }
+  .nav-links {
+    gap: 1rem; /* Reduce espacio entre links */
+  }
+  .navLink {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .contact-button {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Hace la navbar en columna */
+    align-items: center;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+  .navLink, .contact-button {
+    width: 100%; /* Botones ocupan todo el ancho */
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagen-reducida {
+    width: 100px; /* Reduce tamaño del logo */
+  }
+  .navLink {
+    font-size: 0.9rem; /* Ajusta tamaño de fuente */
+  }
 }

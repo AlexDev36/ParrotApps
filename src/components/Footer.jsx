@@ -9,14 +9,6 @@ function Footer() {
           <p className="copyright">
             © 2025 ParrotApps. All rights reserved.
           </p>
-          <div className="nav">
-            <a href="/politica-de-privacidad" className="navLink">
-              Privacy Policy
-            </a>
-            <a href="/terminos-de-servicio" className="navLink">
-              Terms of Service
-            </a>
-          </div>
         </div>
       </div>
     </footer>

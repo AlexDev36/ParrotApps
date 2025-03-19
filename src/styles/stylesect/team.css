@@ -8,7 +8,7 @@
 }
 
 .team-container {
-  width: 100vw;
+  width: 100%;
   max-width: 1400px;
   text-align: center;
   opacity: 0;
