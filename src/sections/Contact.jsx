@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../styles/stylesect/contact.css";
-
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const formRef = useRef(null); // Crea una referencia al formulario
@@ -9,10 +9,17 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Evita la recarga de la página
-    const formData = new FormData(formRef.current);
-    // Aquí puedes manejar el envío del formulario (por ejemplo, enviar los datos a un servidor)
-    console.log(formData.get("nombre"), formData.get("email"), formData.get("mensaje"));
-    // Puedes agregar aquí la lógica para limpiar el formulario después del envío
+
+    // Enviar el formulario usando emailjs
+    emailjs.sendForm('service_xqafkvk', 'template_jg5qhfa', formRef.current, 'LEhdpjr6aOCnK2wdx')
+      .then((result) => {
+        console.log(result.text);
+        alert("Mensaje enviado correctamente");
+        formRef.current.reset(); // Limpia el formulario después del envío
+      }, (error) => {
+        console.log(error.text);
+        alert("Error al enviar el mensaje");
+      });
   };
 
   return (
