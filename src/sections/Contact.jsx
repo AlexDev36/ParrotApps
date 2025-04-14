@@ -29,45 +29,45 @@ const Contact = () => {
         <form ref={formRef} className="form-container" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="nombre" className="form-label">
-              Nombre
+              Name
             </label>
             <input
               id="nombre"
               className="form-input"
               type="text"
               name="nombre" // Agrega el atributo name
-              placeholder="Tu Nombre"
+              placeholder="your name"
               required
             />
           </div>
           <div className="form-group">
             <label htmlFor="email" className="form-label">
-              Email
+              E-mail
             </label>
             <input
               id="email"
               className="form-input"
               type="email"
               name="email" // Agrega el atributo name
-              placeholder="tu@ejemplo.com"
+              placeholder="JohnDoe@example.com"
               required
             />
           </div>
           <div className="form-group">
             <label htmlFor="mensaje" className="form-label">
-              Mensaje
+              Tell Us
             </label>
             <textarea
               id="mensaje"
               className="form-input"
               rows={4}
               name="mensaje" // Agrega el atributo name
-              placeholder="Tu mensaje"
+              placeholder="your message"
               required
             ></textarea>
           </div>
           <button type="submit" className="submit-button">
-            Enviar Mensaje
+            Send
           </button>
         </form>
       </div>

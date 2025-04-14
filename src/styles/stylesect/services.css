@@ -1,13 +1,16 @@
 .services-section {
   padding: 4rem 2rem;
-  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: auto;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231031/pngtree-vibrant-green-feather-texture-as-a-background-image_13752111.png');
   background-size: cover;
   background-position: center;
+  background-color: #141414; 
+  filter: grayscale(1);
+  
 }
 
 .services-container {
@@ -37,8 +40,8 @@
 }
 
 .card {
-  color: #c7c7c7;
-  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.336);
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -61,7 +64,7 @@
 .card-description {
   text-align: center;
   font-size: 1rem;
-  color: #aaaaaa;
+  color: #ffffff;
 }
 
 /* BREAKPOINTS */

@@ -61,16 +61,15 @@ body {
 /* Botón de contacto */
 .contact-button {
   text-decoration: none !important;
-  background-color: #000000;
+  background-color: #969696;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-weight: bold;
   transition: background-color 0.3s;
 }
 
 .contact-button:hover {
-  background-color: rgba(131, 131, 131, 0);
+  background-color: #007bff;
 }
 
 /* SECCIONES */

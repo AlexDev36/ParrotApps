@@ -20,10 +20,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap;
+  flex-direction: column-reverse
+
+
 }
 
 .copyright {
+  position: center;
   font-size: 0.875rem;
   text-align: center;
 }
