@@ -25,7 +25,9 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
             className="imagen-reducida"
             alt="Parrot logo"
             onClick={handleLogoClick} // Ajustar para que lleve a la página principal
-          ></img>
+          >
+          </img>
+          <h1 className="logo-text">Parrot Apps</h1>
         </div>
         <nav className="nav-links">
           <a href="#servicios" className="navLink" onClick={(e) => handleNavigation(e, '#servicios')}>Services</a>

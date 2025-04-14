@@ -28,14 +28,18 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  font-family: 'Courier New', Courier, monospace;
-}
 
 /* Imagen logo */
 .imagen-reducida {
-  width: 150px; 
+  width: 100px; 
   height: auto;
+}
+
+.logo-text {
+  font-size: 1rem;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #ffffff; /* Color del texto del logo */
+  text-decoration: none; /* Elimina subrayado */
 }
 
 /* Links de navegación */
