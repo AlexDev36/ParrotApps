@@ -8,9 +8,9 @@
   background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231031/pngtree-vibrant-green-feather-texture-as-a-background-image_13752111.png');
   background-size: cover;
   background-position: center;
-  background-color: #141414; 
+  background-color: #141414;
+  background-blend-mode: overlay; /* <-- esta es la línea nueva */
   filter: grayscale(1);
-  
 }
 
 .services-container {

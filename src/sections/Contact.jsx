@@ -55,14 +55,14 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <label htmlFor="mensaje" className="form-label">
-              Mensaje
+              Message
             </label>
             <textarea
               id="mensaje"
               className="form-input"
               rows={4}
               name="mensaje" // Agrega el atributo name
-              placeholder="Tu mensaje"
+              placeholder="your message"
               required
             ></textarea>
           </div>
