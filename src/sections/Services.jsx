@@ -34,7 +34,6 @@ const Services = () => {
               We integrate AI into websites and mobile apps to enhance user experience, automate tasks, and deliver smart solutions like chatbots, recommendations, and predictive analytics.            </p>
           </div>
           </div>
-        </div>
       </div>
     </section>
   );
