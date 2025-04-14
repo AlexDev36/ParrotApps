@@ -69,7 +69,8 @@ body {
 }
 
 .contact-button:hover {
-  background-color: #007bff;
+  background-color: #004172;
+  color: aliceblue;
 }
 
 /* SECCIONES */

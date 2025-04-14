@@ -72,7 +72,7 @@
 }
 
 .form-input:focus {
-  border-color: #007bff; /* Resalta el borde en foco */
+  border-color: #004172; /* Resalta el borde en foco */
   outline: none; /* Elimina el contorno predeterminado */
 }
 
@@ -88,12 +88,12 @@
 }
 
 .submit-button:hover {
-  background-color: #002fff;
+  background-color: #004172;
   color: #ffffff;
 }
 
 .submit-button:focus {
-  outline: 2px solid #007bff; /* Agrega un contorno en foco */
+  outline: 2px solid #004172; /* Agrega un contorno en foco */
 }
 
 /* BREAKPOINTS */
