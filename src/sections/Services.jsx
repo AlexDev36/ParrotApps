@@ -29,24 +29,11 @@ const Services = () => {
             </p>
           </div>
           <div className="card animate-on-scroll" style={{ animationDelay: "0.8s" }}>
-            <h3 className="card-title">Web Development</h3>
+            <h3 className="card-title">IA Integration</h3>
             <p className="card-description">
-              Custom web applications tailored to your business needs. We use the latest technologies to ensure scalability and performance.
-            </p>
+              We integrate AI into websites and mobile apps to enhance user experience, automate tasks, and deliver smart solutions like chatbots, recommendations, and predictive analytics.            </p>
           </div>
-          <div className="card animate-on-scroll" style={{ animationDelay: "0.8s" }}>
-            <h3 className="card-title">Mobile App Development</h3>
-            <p className="card-description">
-              Native and cross-platform mobile applications that provide seamless user experiences across all devices.
-            </p>
           </div>
-          <div className="card animate-on-scroll" style={{ animationDelay: "0.8s" }}>
-            <h3 className="card-title">Cloud Solutions</h3>
-            <p className="card-description">
-              Leverage the power of cloud computing with our expertise in AWS, Azure, and Google Cloud Platform.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );

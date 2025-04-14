@@ -36,7 +36,7 @@ const Contact = () => {
               className="form-input"
               type="text"
               name="nombre" // Agrega el atributo name
-              placeholder="your name"
+              placeholder="Tu Nombre"
               required
             />
           </div>
@@ -55,14 +55,14 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <label htmlFor="mensaje" className="form-label">
-              Tell Us
+              Mensaje
             </label>
             <textarea
               id="mensaje"
               className="form-input"
               rows={4}
               name="mensaje" // Agrega el atributo name
-              placeholder="your message"
+              placeholder="Tu mensaje"
               required
             ></textarea>
           </div>
