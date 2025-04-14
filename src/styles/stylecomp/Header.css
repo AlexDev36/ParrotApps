@@ -18,6 +18,7 @@ body {
   background-color: rgba(255, 255, 255, 0); /* Fondo semi-transparente */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+
 }
 
 /* Contenedor */
@@ -33,7 +34,7 @@ body {
 
 /* Imagen logo */
 .imagen-reducida {
-  width: 130px; 
+  width: 150px; 
   height: auto;
 }
 

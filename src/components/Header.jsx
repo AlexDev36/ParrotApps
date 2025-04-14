@@ -21,7 +21,7 @@ const Header = ({ isMenuOpen, toggleMenu }) => {
       <div className="container">
         <div className="logo">
           <img
-            src="https://png.pngtree.com/png-vector/20240320/ourmid/pngtree-colorful-parrot-head-in-dark-bronze-and-azure-neonpunk-style-lith-png-image_12179527.png"
+            src="/logo512.png"
             className="imagen-reducida"
             alt="Parrot logo"
             onClick={handleLogoClick} // Ajustar para que lleve a la página principal
