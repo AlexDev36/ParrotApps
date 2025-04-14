@@ -27,7 +27,12 @@ body {
   width: 100%;
   justify-content: space-between;
 }
-
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 /* Imagen logo */
 .imagen-reducida {
@@ -36,8 +41,8 @@ body {
 }
 
 .logo-text {
-  font-size: 1rem;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-family: 'northeader', sans-serif;
   color: #ffffff; /* Color del texto del logo */
   text-decoration: none; /* Elimina subrayado */
 }
